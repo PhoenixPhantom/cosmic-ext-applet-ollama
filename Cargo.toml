@@ -38,3 +38,7 @@ features = ["applet", "markdown", "highlighter", "tokio", "wayland", "winit"]
 [features]
 default = ["wgpu"]
 wgpu = ["libcosmic/wgpu"]
+
+
+[patch."https://github.com/smithay/client-toolkit.git"]
+sctk = { package = "smithay-client-toolkit", version = "=0.19.2" }
